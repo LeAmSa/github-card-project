@@ -10,7 +10,7 @@ app.get('/users/:login', async (req, res) => {
     try {
         const { login } = req.params
         const { data } = await axios('https://api.github.com/users/' + login)
-        console.log(data)
+        console.log("Usuário capturado.")
         return res.json(data)
     } catch (error) {
         console.error(error)
