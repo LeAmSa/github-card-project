@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap');
 
 :root {
-    --bg: #000000;
+    --bg: #26032e;
     --bg-card: #0E1218;
     --bg-card-opac: #0e1218a8; 
     --text: #F1F1F1;
@@ -38,8 +38,12 @@
     gap: 15px;
   }
 
+  h3 {
+    font-weight: 400;
+  }
+
   .card-ct {
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     background: lightgoldenrodyellow;
     border-radius: 40px;
     padding: 20px 30px;
@@ -49,7 +53,7 @@
 
 .card-item {
   /* border: 1px dashed blue; */
-  background: var(--bg);
+  background: #000;
   border-radius: 40px;
   overflow: hidden;
   height: 100%;
@@ -62,8 +66,8 @@
   align-items: center;
   position: absolute;
   gap: 10px;
-  top: 5%;
-  left: 7%;
+  top: 3%;
+  left: 5%;
 }
 
 .logo-git {
@@ -83,6 +87,8 @@
 
 .profile-img-ct {
   position: absolute;
+  background-image: url('../../perfil_light.jpg');
+  background-size: cover;
   border: 3px solid white;
   border-radius: 50%;
   top: 20%;
@@ -112,13 +118,46 @@
   height: 16px;
 }
 
+.username {
+  font-size: 24px;
+}
+
 .footer-card-ct {
   display: flex;
+  align-items: center;
   gap: 5px;
   align-self: flex-end;
   position: absolute;
   bottom: 3%;
   right: 7%;
+}
+
+.user-search-ct {
+  display: flex;
+  height: 40px;
+}
+
+#user-search-input {
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  font-family: 'Prompt', sans-serif;
+}
+
+#btn-search {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  cursor: pointer;
+}
+
+#btn-search img {
+  width: 22px;
 }
 
 
