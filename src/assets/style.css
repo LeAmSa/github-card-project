@@ -140,6 +140,7 @@
 #user-search-input {
   outline: none;
   border: none;
+  border-radius: 5px 0 0 5px;
   padding-left: 10px;
   font-family: 'Prompt', sans-serif;
 }
