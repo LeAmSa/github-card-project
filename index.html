@@ -47,14 +47,62 @@
                 </div>
                 <div class="footer-card-ct">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgb(255, 255, 255)"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
-                    <h3>GITCARD</h2>
+                    <h3>GITCARD</h3>
                 </div>
             </div>
         </div>
     </div>
     <div class="customize-container">
-        <h3>Encontre seu perfil!</h3>
-        <div class="user-search-ct"><input id="user-search-input" type="text" placeholder="Digite seu Username"><button id="btn-search"><img src="src/assets/img/search.png" alt=""></button></div>
+        <div class="find-profile-ct">
+            <h3>Encontre seu perfil!</h3>
+            <div class="user-search-ct">
+                <input id="user-search-input" type="text" placeholder="Digite seu Username"><button id="btn-search"><img src="src/assets/img/search.png" alt=""></button>
+            </div>
+        </div>
+        <div class="changes-ct">
+            <h2>Altere o visual do seu card!</h2>
+            <div class="change-items-ct">
+                <div class="change-item">
+                    <label for="outside">Cor do contorno:</label>
+                    <input type="color" name="outside" id="outside" value="#fafad2">
+                </div>
+                <div class="change-item">
+                    <label for="bg-card">Cor de fundo do card:</label>
+                    <input type="color" name="bg-card" id="bg-card" value="#000000">
+                </div>
+                <div class="change-item">
+                    <label for="bg-border-img">Borda da imagem de perfil:</label>
+                    <input type="color" name="bg-border-img" id="bg-border-img" value="#ffffff">
+                </div>
+                <div class="change-item">
+                    <label for="git-border">Borda do logo Github:</label>
+                    <input type="color" name="git-border" id="git-border" value="#ffffff">
+                </div>
+            </div>
+            <div class="btn-ct">
+                <button class="btn">Restaurar</button>
+                <button class="btn">Aplicar</button>
+            </div>
+        </div>
+        <div class="download-ct">
+            <h3>Gostou? Faça o download do seu card :) </h3>
+            <button class="btn" id="btn-generate">Download</button>
+            <a id="link-download"></a>
+        </div>
     </div>
+    <script src="src/scripts/html2canvas.min.js"></script>
+    <script>
+        //Download Card
+        let btnGenerate = document.querySelector('#btn-generate')
+        let btnDownload = document.querySelector('#link-download')
+
+        btnGenerate.addEventListener('click', () => {
+            html2canvas(document.querySelector('.card-ct')).then(canvas => {
+                btnDownload.href = canvas.toDataURL('image/png')
+                btnDownload.download = 'my-gitcard'
+                btnDownload.click()
+            })
+        })
+    </script>
 </body>
 </html>
