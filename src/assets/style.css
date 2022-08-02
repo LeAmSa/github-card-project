@@ -87,7 +87,6 @@
 
 .profile-img-ct {
   position: absolute;
-  background-image: url('../../perfil_light.jpg');
   background-size: cover;
   border: 3px solid #fff;
   border-radius: 50%;
