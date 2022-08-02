@@ -9,6 +9,8 @@
     --img-profile: #8257e5;
     --buttons: #FFF;
     --border-button: #1A1A1A;
+    --hlt-color: #2DBA4E;
+    --background: #24292E;
   }
 
   * {
@@ -21,8 +23,93 @@
     width: 100%;
     height: 100vh;
     font-family: 'Prompt', sans-serif;
-    background: var(--bg);
+    background: var(--background);
     color: #ffffff;
+    
+  }
+
+  .intro-section {
+    background: #fff;
+    color: var(--background);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .intro-ct {
+    position: relative;
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .intro-text {
+    /* border: 1px dashed blue; */
+    text-align: right;
+  }
+
+  .intro-text h1 {
+    font-size: 3em;
+  }
+
+  .intro-text h2 {
+    margin-bottom: 15px;
+  }
+
+  .img-examples-ct {
+    /* border: 1px dashed black; */
+    width: 430px;
+    height: 320px;
+  }
+
+  .img-example {
+    position: absolute;
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.712);
+  }
+
+  /* .img-example:nth-child(1) {
+    transform: translateX(-100px);
+  } */
+
+  .img-example:nth-child(2) {
+    transform: translate(120px, -50px);
+    z-index: 99;
+  }
+
+  .img-example:nth-child(3) {
+    transform: translateX(220px);
+  }
+
+  #btn-start {
+    color: #fff;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 25px;
+    background: var(--background);
+    border: 2px solid var(--background);
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    transition: all .2s ease;
+  }
+
+  #btn-start:hover {
+    color: var(--background);
+    background: #fff;
+  }
+
+  .card-section-ct {
+    background: var(--background);
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -40,6 +127,10 @@
 
   h2, h3 {
     font-weight: 400;
+  }
+
+  .hlt-color {
+    color: var(--hlt-color);
   }
 
   .card-ct {
@@ -167,6 +258,7 @@
   outline: none;
   border: none;
   border-radius: 5px 0 0 5px;
+  width: 230px;
   padding-left: 10px;
   font-family: 'Prompt', sans-serif;
 }
@@ -230,4 +322,8 @@
 .change-item {
   display: flex;
   flex-direction: column;
+}
+
+.download-ct h3{
+  margin-bottom: 5px;
 }
