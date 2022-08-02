@@ -27,7 +27,7 @@ async function getData() {
 
 function showData(user) {
     const userName = document.querySelector('.username').innerHTML = user.login
-    const profileImg = document.querySelector('.profile-img-ct').style.backgroundImage = `url(${user.avatar_url})`
+    const profileImg = document.querySelector('#profile_img').src = `${user.avatar_url})`
     const name = document.querySelector('#name').innerHTML = user.name
     const followers = document.querySelector('#followers').innerHTML = user.followers
     const following = document.querySelector('#following').innerHTML = user.following

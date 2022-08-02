@@ -87,13 +87,21 @@
 
 .profile-img-ct {
   position: absolute;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-size: cover; */
   border: 3px solid #fff;
   border-radius: 50%;
   top: 15%;
   right: -10%;
   width: 280px;
   height: 280px;
+  overflow: hidden;
+}
+
+.profile-img-ct img {
+  width: 100%;
 }
 
 .infos-ct {

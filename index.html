@@ -19,6 +19,7 @@
                     <p class="username"></p>
                 </div>
                 <div class="profile-img-ct">
+                    <img id="profile_img">
                 </div>
                 <div class="infos-ct">
                     <div class="info-item">
@@ -103,7 +104,7 @@
         let btnDownload = document.querySelector('#link-download')
 
         btnGenerate.addEventListener('click', () => {
-            html2canvas(document.querySelector('.card-ct')).then(canvas => {
+            html2canvas(document.querySelector('.card-ct'), {allowTaint: true, useCORS: true}).then(canvas => {
                 btnDownload.href = canvas.toDataURL('image/png')
                 btnDownload.download = 'my-gitcard'
                 btnDownload.click()
