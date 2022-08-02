@@ -2,6 +2,15 @@
 const btnSearch = document.querySelector('#btn-search')
 const btnApply = document.querySelector('#btn-apply')
 const btnReset = document.querySelector('#btn-reset')
+const btnStart = document.querySelector('#btn-start')
+const cardSection = document.querySelector('.card-section-ct')
+
+btnStart.addEventListener('click', () => {
+    cardSection.scrollIntoView({
+        inline: 'center',
+        behavior: 'smooth'
+    })
+})
 
 async function getData() {
     const userInput = document.querySelector('#user-search-input')
@@ -77,9 +86,6 @@ function applyColors() {
     const bgCard = document.querySelector('.card-item').style.background = colorBgCard
     const bgBorderImg = document.querySelector('.profile-img-ct').style.border = `3px solid ${colorBgBorderImage}`
     const gitBorder = document.querySelector('.logo-git').style.border = `2px solid ${colorGitBorder}`
-
-    
-
 }
 
 btnApply.addEventListener('click', () => {
