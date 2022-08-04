@@ -4,6 +4,7 @@ const btnApply = document.querySelector('#btn-apply')
 const btnReset = document.querySelector('#btn-reset')
 const btnStart = document.querySelector('#btn-start')
 const cardSection = document.querySelector('.card-section-ct')
+const base_url = 'https://api.github.com/users'
 
 btnStart.addEventListener('click', () => {
     cardSection.scrollIntoView({
@@ -16,7 +17,7 @@ async function getData() {
     const userInput = document.querySelector('#user-search-input')
     const username = userInput.value
     try {
-        await fetch(`http://localhost:3000/users/${username}`).then(
+        await fetch(`${base_url}/${username}`).then(
             res => {
                 if(res.status >= 200 && res.status <= 299) {
                     return res.json()
