@@ -4,7 +4,10 @@ const btnApply = document.querySelector('#btn-apply')
 const btnReset = document.querySelector('#btn-reset')
 const btnStart = document.querySelector('#btn-start')
 const cardSection = document.querySelector('.card-section-ct')
+const mobileEditMenu = document.querySelector('.changes-ct')
+const pWarning = document.querySelector('#warning')
 const base_url = 'https://api.github.com/users'
+const btnEdit = document.querySelector('.btn-edit')
 
 btnStart.addEventListener('click', () => {
     cardSection.scrollIntoView({
@@ -20,6 +23,7 @@ async function getData() {
         await fetch(`${base_url}/${username}`).then(
             res => {
                 if(res.status >= 200 && res.status <= 299) {
+                    pWarning.style.opacity = '0' 
                     return res.json()
                 } else {
                     throw Error(response.statusText)
@@ -31,7 +35,8 @@ async function getData() {
             }
         )
     } catch (error) {
-        alert('Usuário não encontrado.')        
+        // alert('Usuário não encontrado.')
+        pWarning.style.opacity = '1'        
     }
 }
 
@@ -95,4 +100,8 @@ btnApply.addEventListener('click', () => {
 
 btnReset.addEventListener('click', () => {
     resetColors()
+})
+
+btnEdit.addEventListener('click', () => {
+    mobileEditMenu.classList.toggle('active')
 })
