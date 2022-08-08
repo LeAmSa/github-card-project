@@ -362,6 +362,7 @@ h2, h3 {
 
 @media screen and (max-width: 500px) {
   body {
+    position: relative;
     overflow-x: hidden;
   }
 
@@ -405,6 +406,16 @@ h2, h3 {
     padding-bottom: 20px;
   }
 
+  .card-ct {
+    width: 310px;
+    height: 510px;
+  }
+
+  .profile-img-ct {
+    width: 260px;
+  height: 260px;
+  }
+
   .card-section-ct {
     position: relative;
     display: grid;
@@ -429,7 +440,7 @@ h2, h3 {
   bottom: 15%;
   /* left: 0; */
   right: 0;
-  height: 310px;
+  height: 320px;
   width: 65vw;
   background: #fff;
   border: none;
