@@ -425,15 +425,16 @@ h2, h3 {
 
  .changes-ct {
   position: absolute;
-  top: 0;
+  /* top: 0; */
+  bottom: 15%;
+  /* left: 0; */
   right: 0;
-  left: 0;
-  height: 50vh;
-  width: 100vw;
+  height: 310px;
+  width: 65vw;
   background: #fff;
   border: none;
-  border-radius: 0;
-  padding: 10px 50px;
+  border-radius: 15px 0 0 15px;
+  padding: 15px 20px;
   color: var(--bg-card);
   transform: translateX(100%);
   transition: all .3s ease;
