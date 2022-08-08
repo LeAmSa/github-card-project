@@ -2,6 +2,8 @@
 const btnSearch = document.querySelector('#btn-search')
 const btnApply = document.querySelector('#btn-apply')
 const btnReset = document.querySelector('#btn-reset')
+const mobileBtnApply = document.querySelector('.mobile-btn-apply')
+const mobileBtnReset = document.querySelector('.mobile-btn-reset')
 const btnStart = document.querySelector('#btn-start')
 const cardSection = document.querySelector('.card-section-ct')
 const mobileEditMenu = document.querySelector('.changes-ct')
@@ -99,6 +101,14 @@ btnApply.addEventListener('click', () => {
 })
 
 btnReset.addEventListener('click', () => {
+    resetColors()
+})
+
+mobileBtnApply.addEventListener('click', () => {
+    applyColors()
+})
+
+mobileBtnReset.addEventListener('click', () => {
     resetColors()
 })
 
