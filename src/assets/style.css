@@ -412,8 +412,8 @@ h2, h3 {
   }
 
   .profile-img-ct {
-    width: 260px;
-    height: 260px;
+    width: 270px;
+    height: 270px;
   }
 
   .card-section-ct {
@@ -436,22 +436,23 @@ h2, h3 {
 
  .changes-ct {
   position: absolute;
-  /* top: 0; */
+  justify-content: space-around;
   bottom: 15%;
-  /* left: 0; */
   right: 0;
-  height: 320px;
-  width: 65vw;
+  height: 340px;
+  width: 75vw;
   background: #fff;
   border: none;
   border-radius: 15px 0 0 15px;
-  padding: 15px 20px;
+  padding: 0 20px;
   color: var(--bg-card);
+  opacity: 0;
   transform: translateX(100%);
   transition: all .3s ease;
  }
 
  .changes-ct.active {
+  opacity: 1;
   transform: translateX(0%);
  }
 
