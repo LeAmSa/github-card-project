@@ -10,6 +10,7 @@ const mobileEditMenu = document.querySelector('.changes-ct')
 const pWarning = document.querySelector('#warning')
 const base_url = 'https://api.github.com/users'
 const btnEdit = document.querySelector('.btn-edit')
+const userInput = document.querySelector('#user-search-input')
 
 btnStart.addEventListener('click', () => {
     cardSection.scrollIntoView({
@@ -19,7 +20,6 @@ btnStart.addEventListener('click', () => {
 })
 
 async function getData() {
-    const userInput = document.querySelector('#user-search-input')
     const username = userInput.value
     try {
         await fetch(`${base_url}/${username}`).then(
@@ -38,6 +38,7 @@ async function getData() {
         )
     } catch (error) {
         // alert('Usuário não encontrado.')
+        pWarning.innerHTML = 'Usuário não encontrado.'
         pWarning.style.opacity = '1'        
     }
 }
@@ -53,7 +54,20 @@ function showData(user) {
 }
 
 btnSearch.addEventListener('click', () => {
-    getData()
+    if (userInput.value != '') {
+        getData()
+        pWarning.style.opacity = '0'
+    } else {
+        pWarning.innerHTML = 'Digite um username.'
+        pWarning.style.opacity = '1'
+    }
+})
+
+userInput.addEventListener('keydown', (event) => {
+    const keyName = event.keyCode
+    if (keyName == 13) {
+        btnSearch.click()
+    }
 })
 
 //Customization functions
@@ -113,5 +127,14 @@ mobileBtnReset.addEventListener('click', () => {
 })
 
 btnEdit.addEventListener('click', () => {
-    mobileEditMenu.classList.toggle('active')
+    mobileEditMenu.classList.add('active')
+})
+
+//Hide menu if click outside
+document.addEventListener('mouseup', function(e) {
+    if (mobileEditMenu.classList.contains('active')) {
+        if (!mobileEditMenu.contains(e.target)) {
+            mobileEditMenu.classList.remove('active')
+        }
+    }
 })
