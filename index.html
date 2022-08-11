@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/assets/style.css">
+    <script src="src/scripts/html2canvas.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>GitCard Maker</title>
 </head>
 <body>
@@ -128,29 +130,8 @@
             </div>
         </div>
     </div>
-    <script src="src/scripts/html2canvas.min.js"></script>
-    <script>
-        //Download Card
-        let btnGenerate = document.querySelector('#btn-generate')
-        let btnDownload = document.querySelector('#link-download')
-        let mobileBtnDownload = document.querySelector('.btn-download')
-
-        btnGenerate.addEventListener('click', () => {
-            html2canvas(document.querySelector('.card-ct'), {allowTaint: true, useCORS: true}).then(canvas => {
-                btnDownload.href = canvas.toDataURL('image/png')
-                btnDownload.download = 'my-gitcard'
-                btnDownload.click()
-            })
-        })
-
-        mobileBtnDownload.addEventListener('click', () => {
-            html2canvas(document.querySelector('.card-ct'), {allowTaint: true, useCORS: true}).then(canvas => {
-                btnDownload.href = canvas.toDataURL('image/png')
-                btnDownload.download = 'my-gitcard'
-                btnDownload.click()
-            })
-        })
-    </script>
+    <script src="src/scripts/scrollreveal.js"></script>
+    <script src="src/scripts/download.js"></script>
     <script src="src/scripts/main.js"></script>
 </body>
 </html>
