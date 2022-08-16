@@ -57,10 +57,12 @@ body {
 
 .intro-text h1 {
   font-size: 3em;
+  text-shadow: 4px 3px 4px #00000029;
 }
 
 .intro-text h2 {
   margin-bottom: 15px;
+  text-shadow: 4px 3px 4px #00000029;
 }
 
 .img-examples-ct {
@@ -99,6 +101,7 @@ body {
   background: var(--background);
   border: 2px solid var(--background);
   font-family: 'Prompt', sans-serif;
+  box-shadow: 2px 2px 4px 1px #00000029;
   cursor: pointer;
   transition: all .2s ease;
 }
