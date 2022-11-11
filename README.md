@@ -101,7 +101,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[screenshot]: https://drive.google.com/uc?id=1EKjaGcRDby9vNV68CuHAwd3kYGmsLt6D
+[screenshot]: https://drive.google.com/uc?id=1-hUXPAuE6ShII6HdoztAvALWM14fRoch
 [license-shield]: https://img.shields.io/github/license/LeAmSa/nlw-esports-web?style=for-the-badge
 [license-url]: https://github.com/LeAmSa/github-card-project/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
