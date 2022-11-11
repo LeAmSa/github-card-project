@@ -1,15 +1,112 @@
-# github-card-project
- Card design consumindo a api do GitHub
 
-# Objetivos:
-- Ter um campo de pesquisa de usuários que receba o "login" do usuário e retorne o card personalizado com as informações;
-- Consumir API do Github;
-- Ter um botão que altere a cor de fundo;
-- Oferecer recursos para que o usuário personalize o card;
-- Permitir que o usuário faça o download do card para utilizar como quiser;
+<a name="readme-top"></a>
 
-***Desafios extras:***
+[![MIT License][license-shield]][license-url] [![LinkedIn][linkedin-shield]][linkedin-url]
 
-- Criando um botão para fazer o download do card;
-- Copiar o card no `clipboard` ;
-- Adicionando animação no card; 
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+
+  <h1 align="center">GitCard Maker</h1>
+  <h4 align="center">Status: DONE ✅ </h4>
+  <div align="center">
+  <a href="https://leamsa.github.io/github-card-project/" target="_blank">
+	   🚀 Access the website on github-pages
+  </a>
+  </div>
+</div>
+
+<br>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+    </li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+<a name="about-the-project"></a>
+
+![Screenshot][screenshot]
+
+The objective was to develop a web app to create graphic cards with user information from GitHub API.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+
+<a name="built-with"></a>
+
+![HTML][html-badge] ![CSS][css-badge] ![Javascript][javascript-badge]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+<a name="getting-started"></a>
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/LeAmSa/github-card-project.git
+   ```
+2. Enter the project folder
+   ```sh
+   cd github-card-project
+   ```
+3. Open `index.html`
+
+
+<!-- Features -->
+
+## Features
+
+<a name="features"></a>
+
+- [x] Fetch user data from GitHub API
+- [x] Customize GitCard appearance
+- [x] Download GitCard
+- [x] Responsive
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## License
+
+<a name="license"></a>
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[screenshot]: https://drive.google.com/uc?id=1EKjaGcRDby9vNV68CuHAwd3kYGmsLt6D
+[license-shield]: https://img.shields.io/github/license/LeAmSa/nlw-esports-web?style=for-the-badge
+[license-url]: https://github.com/LeAmSa/github-card-project/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/leandroamorimsalles1994
+[html-badge]: https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[javascript-badge]: https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white
+[css-badge]: https://img.shields.io/badge/Css3-1572B6?style=for-the-badge&logo=Css3&logoColor=white
+
