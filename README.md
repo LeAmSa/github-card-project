@@ -70,7 +70,10 @@ The objective was to develop a web app to create graphic cards with user informa
    ```sh
    cd github-card-project
    ```
-3. Open `index.html`
+3. Open project in [Visual Studio Code](https://code.visualstudio.com/), for example
+	 ```sh
+   code .
+   ```
 
 
 <!-- Features -->
