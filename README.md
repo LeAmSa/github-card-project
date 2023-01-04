@@ -108,7 +108,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [license-shield]: https://img.shields.io/github/license/LeAmSa/nlw-esports-web?style=for-the-badge
 [license-url]: https://github.com/LeAmSa/github-card-project/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/leandroamorimsalles1994
+[linkedin-url]: https://www.linkedin.com/in/leamsa
 [html-badge]: https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white
 [javascript-badge]: https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white
 [css-badge]: https://img.shields.io/badge/Css3-1572B6?style=for-the-badge&logo=Css3&logoColor=white
